@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Hello</title>
+<title>exercice1</title>
 </head>
 <body>
+<a href="/web-dyna-td1-1/td1/exo1.php?message=Hello">Afficher Hello</a>
 <?php
-echo("Hello world !");
-?>
+    echo "Vous êtes sur la page n° ".$_GET["message"];
+    ?>
 </body>
 </html>
