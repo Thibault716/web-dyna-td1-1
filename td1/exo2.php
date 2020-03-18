@@ -9,6 +9,8 @@
     <input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#ff0000" name="Color">
     <label for="size">Taille : </label>
     <input type="number" value="" name="size" id="size">
+    <label for="contenue">A toi de jouer</label>
+    <input type="text" value="" name="message" id="message">
     <input type="submit" value="Valider">
 </form>
 <body>
