@@ -17,11 +17,12 @@
     <a href="?Color=%23ff0000&size=15&message=salut">Message 1</a>
     <a href="?Color=%230000FF&size=30&message=c'est">Message 2</a>
     <a href="?Color=%231ae633&size=50&message=l'exercice 2">Message 3</a><br>
+    
     <?php
     if (empty($_GET)) {
         echo "Euh, je crois que tu as oublié de remplir :D";
     }
-    elseif (empty($_GET["color"]) and $_GET["size"]) {
+    if (empty($_GET["size"]) and $_GET["Color"]) {
         echo "<div style='font-size: 12px; color: black'>{$_GET["message"]}</div>";
     }
     else {
