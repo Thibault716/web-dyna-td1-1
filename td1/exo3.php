@@ -22,11 +22,11 @@
     if (empty($_POST)) {
         echo "Euh, je crois que tu as oublié de remplir :D";
     }
-    if (empty($_POST["size"]) and $_POST["Color"]) {
+    if (empty($_POST["size"]) and $_POST["color"]) {
         echo "<div style='font-size: 12px; color: black'>{$_POST["message"]}</div>";
     }
     else {
-        echo "<div style='font-size: {$_POST["size"]}px; color: {$_POST["Color"]}'>{$_POST["message"]}</div>";
+        echo "<div style='font-size: {$_POST["size"]}px; color: {$_POST["color"]}'>{$_POST["message"]}</div>";
     }
     ?>
 </body>
