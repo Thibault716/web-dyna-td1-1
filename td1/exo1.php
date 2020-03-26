@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Hello</title>
+<title>Exercice 1</title>
 </head>
 <body>
     <a href="?message=Coucou">Afficher Hello</a>

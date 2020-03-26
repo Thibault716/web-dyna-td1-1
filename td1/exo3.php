@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Hello</title>
+    <title>Exercice 3</title>
 </head>
 <form method="POST">
     <label for="color">Couleur : </label>
