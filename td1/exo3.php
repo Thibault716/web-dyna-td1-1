@@ -10,7 +10,7 @@
     <label for="size">Taille : </label>
     <input type="number" value="" name="size" id="size">
     <label for="contenue">A toi de jouer</label>
-    <input type="text" value="" name="message" id="message">
+    <testarea type="text" value="" name="message" id="message">
     <input type="submit" value="Valider">
 </form>
 <body>
