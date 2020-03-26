@@ -11,9 +11,9 @@
     <?php
     echo "<table border='1'>
     <tbody>";
-    for($l=1;$l<=$_GET["nblignes"];$l++){ 
+    for($l=0; $l<=$_GET["nblignes"]; $l++){ 
         echo "<tr>"; 
-        for($c=1;$c<=$_GET["nbColonnes"];$c++){ 
+        for($c=0; $c<=$_GET["nbColonnes"]; $c++){ 
             echo "<td align='center'>$l-$c</td>"; 
         } 
         echo "</tr>"; 
