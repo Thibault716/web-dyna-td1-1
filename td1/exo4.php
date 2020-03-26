@@ -6,21 +6,30 @@
 </head>
 <body>
 <?php
-// $i<= ... ---> Nb de ligne
-// $j<= ... ---> Nb de colonne
-echo "<table border='1'>
-    <tbody>";
-    for ($i=1; $i<=7; $i++) {
-        echo '<tr>';
-        for ($j=1; $j<=12; $j++) {
-            echo '<td>';
-            echo $affichage; // Afficher les lignes et colonnes
-            echo '<td>';
-    }
-    echo "</tr>";
-    $j=1;
-}
-echo '</table>';
+include "header.php"
+?>
+
+<table border='1'>
+    <tbody>
+        <?php
+        for($i=1; $i<$_GET["nbligne"]; $i++)
+        {
+            echo"<tr>";
+                for ($j=1; $j<$_GET["nbcolonne"]; $j++)
+                {
+                    echo "<type>";
+                    echo "$i-";
+                    echo "$j";
+                    echo "</td>";
+                }
+            echo "</tr>";
+        }
+        ?>
+    </tbody>   
+</table>
+    
+<?php
+include "footer.php";
 ?>
 </body>
 </html>
