@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Exercice 4</title>
+<meta charset="UTF-8">
+<title>Hello</title>
 </head>
+<form method="GET">
+    <label for="contenue">Lignes : </label>
+    <input type="text" value="" name="message" id="message">
+    <label for="contenue">Colonnes : </label>
+    <input type="text" value="" name="message" id="message">
+    <input type="submit" value="Valider">
+    echo createHtmlTable;
+</form>
 <body>
-    <a href="?ligne=2&colonne=2">2x2</a>
-    <a href="?ligne=5&colonne=5">5x5</a>
-    <a href="?ligne=8&colonne=10">10x8</a>
     <?php
+function createHtmlTable($ligne,$colonne){
     echo "<table border='1'>
     <tbody>";
-    for($l=0;$l<=$_GET["ligne"];$l++){
+    for($l=0;$l<=$ligne;$l++){
 
         if (($l % 2) == 0){
             $gras = "bold";
@@ -19,22 +26,20 @@
             $gras = "normal";
         }
         echo "<tr>"; 
-        for($c=0;$c<=$_GET["colonne"];$c++){ 
+        for($c=0;$c<=$colonne;$c++){ 
             if (($c % 2) == 1){
                 $color = "red";
             }
             else{
                 $color = "black";
             }
-            echo "<td align='center'><p style='font-weight: $gras; color: $color'>$l - $c</p></td>"; 
+            echo "<td align='center'><p style='font-weight: $gras; color: $color'>$l-$c</p></td>"; 
         } 
         echo "</tr>"; 
     } 
-
     echo "</tbody>
     </table>";
-
+}
     ?>
-
 </body>
 </html>
