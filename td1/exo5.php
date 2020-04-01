@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <title>Exercice 5</title>
 </head>
-<form method="GET">
+<body>
+<form method="POST">
     <label for="contenue">Lignes : </label>
     <input type="text" value="" name="message" id="message">
     <label for="contenue">Colonnes : </label>
     <input type="text" value="" name="message" id="message">
     <input type="submit" value="Valider">
 </form>
-<body>
 <?php
 include("function.php");
-createHtmlTable($_GET["ligne"],$_GET["colonne"]);
+createHtmlTable($_POST["ligne"]+1,$_POST["colonne"]+1);
 ?>
 </body>
 </html>
