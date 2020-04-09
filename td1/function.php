@@ -4,16 +4,16 @@ function createHtmlTable($ligne,$colonne){
     for($i=0;$i<$_POST["ligne"];$i++){
     for ($i=0;$i<$ligne;$i++){
             echo"<tr>";
-        
+
             for($j=0;$j<$_POST["colonne"];$j++){
             for ($j=0;$j<$colonne;$j++){
                     echo"<tr>";
 
         if (($i % 2) == 0){
-            $gras = "bold";
+            $Bold = "bold";
 
             echo"</tr>";
 	}
     echo"</tbody>";
     echo"</table>";
-}
+
