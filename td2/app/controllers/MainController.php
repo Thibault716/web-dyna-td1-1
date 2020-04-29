@@ -19,37 +19,33 @@ class MainController extends AbstractWsController{
         $this->loadView('MainController/index.html',compact('messages','content') + $menu);
     }
 
-          
+    /**
+     *@route("MainController/contact/{message}","methods"=>["get"])
+     **/
     public function contact($message,$who='world'){
         $this->loadView('MainController/contact.html');
-/**
-*@route("MainController/contact/{message}","methods"=>["get"])
-**/
 }
 
-
+    /**
+     *@route("MainController/partners","methods"=>["get"])
+    **/
     public function partners(){
         $menu=$this->getMenu('Partners');
         $messages=$this->dataProvider->getPartners();
         $this->loadView('main/vBase.html');
-/**
- *@route("MainController/partners","methods"=>["get"])
-**/
 }
 
-
+    /**
+    *@route("MainController/sendMessage","methods"=>["post"])
+    **/
     public function sendMessage(){
         $this->loadView('MainController/sendMessage.html');
-/**
-*@route("MainController/sendMessage","methods"=>["post"])
-**/
 }
 
-
+    /**
+    *@route("MainController/partnerDetail","methods"=>["get"])
+    **/
     public function partnerDetail($MainControllerpartnerDetails){
         $this->loadView('MainController/partnerDetail.html');
-/**
-*@route("MainController/partnerDetail","methods"=>["get"])
-**/
 }
 }
