@@ -11,10 +11,8 @@ class MainController extends AbstractWsController{
     public function index() {
         $menu=$this->getMenu('Home');
         $messages=$this->dataProvider->getMessages();
-        $content=$this->dataProvider->getPageContent('Home');
-        var_dump($menu);
-        var_dump($messages);
-        var_dump($content);
+        $content=nl2br($this->dataProvider->getPageContent('Home'));
+        $this->loadView('MainController/index.html',compact('messages','content') + $menu);
 /**
 *
 * @get("_default","name"=>"Home")
