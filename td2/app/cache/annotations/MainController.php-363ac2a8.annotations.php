@@ -18,5 +18,11 @@ return array(
   'controllers\\MainController::partners' => array(
     array('#name' => 'route', '#type' => 'Ubiquity\\annotations\\router\\RouteAnnotation', "MainController/partners","methods"=>["get"])
   ),
+  'controllers\\MainController::partnerDetail' => array(
+    array('#name' => 'route', '#type' => 'Ubiquity\\annotations\\router\\RouteAnnotation', "MainController/partnerDetail","methods"=>["get"])
+  ),
+  'controllers\\MainController::sendMessage' => array(
+    array('#name' => 'route', '#type' => 'Ubiquity\\annotations\\router\\RouteAnnotation', "MainController/sendMessage","methods"=>["post"])
+  ),
 );
 

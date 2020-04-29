@@ -1,0 +1,54 @@
+[
+    {
+        "name": "phpmv/ubiquity-demos-datas",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phpMv/ubiquity-demos-datas.git",
+            "reference": "b698b5c533989cd577134f5f51b52f30009a222a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/phpMv/ubiquity-demos-datas/zipball/b698b5c533989cd577134f5f51b52f30009a222a",
+            "reference": "b698b5c533989cd577134f5f51b52f30009a222a",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.4"
+        },
+        "time": "2020-04-04T23:09:14+00:00",
+        "type": "datas",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Jean-Christophe HERON",
+                "email": "myaddressmail@gmail.com",
+                "role": "Lead developer"
+            }
+        ],
+        "description": "Datas for Ubiquity-demos projects",
+        "keywords": [
+            "framework",
+            "mvc",
+            "orm",
+            "php",
+            "server",
+            "ubiquity"
+        ]
+    }
+]
