@@ -64,7 +64,7 @@ class User{
 	}
 
 	 public function getFirstname(){
-		return $this->firstname.' '.$this->lastname;
+		return $this->firstname;
 	}
 
 	 public function setFirstname($firstname){
@@ -121,6 +121,7 @@ class User{
 
 	 public function __toString(){
 		return ($this->email??'no value').'';
+		return $this->firstname.' '.$this->lastname;
 	}
 
 }
